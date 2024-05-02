@@ -47,7 +47,7 @@
     </properties>
 
     <build>
-        <plugins><!-- Maven Assembly Plugin -->
+        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -62,7 +62,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <!-- get all project dependencies -->
+                  
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
@@ -70,7 +70,7 @@
                 <executions>
                     <execution>
                         <id>make-assembly</id>
-                        <!-- bind to the packaging phase -->
+                       
                         <phase>package</phase>
                         <goals>
                             <goal>single</goal>
